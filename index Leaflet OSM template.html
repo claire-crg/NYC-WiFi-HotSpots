@@ -50,7 +50,7 @@
 				}).addTo(map);
 			
 			// Read markers data from data.csv
-			  $.get('./data.csv', function(csvString) {
+			  $.get('./NYC_Wi-Fi_Hotspot_Locations_with_latlong_and_title.csv', function(csvString) {
 
 			    // Use PapaParse to convert string to array of objects
 			    var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
