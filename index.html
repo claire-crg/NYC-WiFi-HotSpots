@@ -63,8 +63,8 @@
 			      var row = data[i];
 				
 				var marker = L.marker([row.Latitude, row.Longitude], {
-					opacity: 0.8
-				      }).bindPopup(row.Title);
+					opacity: 1
+				      }).bindPopup(row.Title+"<p>"+row.SSID+"<p>"+row.Remarks);
       
      				 marker.addTo(map);
    				 }
